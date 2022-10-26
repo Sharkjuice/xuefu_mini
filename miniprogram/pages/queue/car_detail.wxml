@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="image-parent">
+    <image src="../../images/banner.jpg" mode='aspectFill'> 
+    </image>
+    <view class='text-logo'>学府花园 我的家园</view>
+  </view>
+    <view class="table">
+        <view class="tr">
+            <view class="td" >房号</view>
+            <view class="td" >{{car.room_id}}</view>
+        </view>
+        <view class="tr odd">
+            <view class="td" >车号</view>
+            <view class="td" >{{car.car_id}}</view>
+        </view>
+        <view class="tr">
+            <view class="td">申请人</view>
+           <view class="td">{{ car.applicant_name }}</view>
+        </view>
+        <view class="tr odd" >
+            <view class="td">车型号</view>
+            <view class="td">{{ car.car_model }}</view>
+        </view>
+        <view class="tr" >
+            <view class="td">联系方式</view>
+            <view class="td">{{ car.contact }}</view>
+        </view>
+
+        <view class="tr odd" >
+            <view class="td">卡类型</view>
+            <view class="td">{{ car.card_type_str }}</view>
+        </view>
+
+        <view class="tr" >
+            <view class="td">认证</view>
+            <view class="td">{{ car.approve_status_str  }}</view>
+        </view>
+
+        <view class="tr odd" >
+            <view class="td">编号</view>
+            <view class="td">{{ car.approve_id_str }}</view>
+        </view>
+    </view>
+</view>

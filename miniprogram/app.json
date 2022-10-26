@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/fee/query",
+    "pages/fee/detail",
+    "pages/queue/queue",
+    "pages/queue/list",
+    "pages/queue/history_list",
+    "pages/queue/detail",
+    "pages/queue/car_detail",
+    "pages/car/query",
+    "pages/car/car_detail",
+    "pages/owner/owner"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  
+  "lazyCodeLoading": "requiredComponents",
+  
+  "tabBar": {  
+    "color": "#a9b7b7",  
+    "selectedColor": "#11cd6e",  
+    "borderStyle": "black" ,
+    "list": [
+      {  
+        "pagePath": "pages/fee/query",  
+        "text": "物业费",
+        "iconPath": "images/物业费-01.png",
+        "selectedIconPath":"images/物业费-00.png"
+      },
+      {  
+        "pagePath": "pages/car/query",  
+        "text": "车辆查询",
+        "iconPath": "images/车辆-01.png",
+        "selectedIconPath":"images/车辆-00.png"
+      },
+      
+      {  
+      "pagePath": "pages/queue/queue",  
+      "text": "车辆排队",
+      "iconPath": "images/停车-01.png",
+      "selectedIconPath": "images/停车-00.png"
+    }, 
+      {  
+      "pagePath": "pages/owner/owner",  
+      "text": "我的信息",
+      "iconPath": "images/我的-01.png",
+      "selectedIconPath": "images/我的-00.png"
+    }
+    ]
+  }  
+}

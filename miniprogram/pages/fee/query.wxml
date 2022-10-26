@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="image-parent">
+  <image src="../../images/banner.jpg" mode='aspectFill'> 
+  </image>
+  <view class='text-logo'>学府花园 我的家园</view>
+  </view>
+  <view class="content">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class='searchItem'>
+            <image src='../../images/room.png'></image>
+            <view>房间号</view>
+            <input name="room_id"></input>
+        </view>
+        <view class='searchTip'>请输入4/5位房间号</view>
+        <view class='searchItem'>
+            <image src='../../images/code.png'></image>
+            <view>校验码</view>
+            <input name="code"></input>
+        </view>
+        <view class='searchTip'>请输入电话号码后4位</view>
+        <button type="primary"  class='one-button' formType="submit">查询</button>
+    </form>
+    <view class="text-box" style="color:darkgreen">
+      <text>完善我的信息,</text>
+      <text>更好地保护隐私</text>
+    </view>
+    <view class="text-box" style="color:blueviolet">
+      <text>{{message}}</text>
+    </view>
+    <!-- <view bindtap='bindLink'>
+        <view class='text'>学府花园2022年第一次业主大会</view>        
+    </view> -->
+  </view>
+</view>
+ 

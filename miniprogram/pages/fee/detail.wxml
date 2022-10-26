@@ -1,0 +1,70 @@
+<view class="container">
+    <view class="image-parent">
+    <image src="../../images/banner.jpg" mode='aspectFill'> 
+    </image>
+    <view class='text-logo'>学府花园 我的家园</view>
+  </view>
+    <view class="table">
+        <view class="tr">
+            <view class="th" >{{fee_list[0].room_id}}</view>
+        </view>
+        <view class="tr">
+            <view class="th td-1">项目</view>
+           <view class="th">金额</view>
+            <view class="th">周期</view>
+        </view>
+        <block  wx:for="{{ fee_list }}" wx:for-item="fee" wx:for-index="index" wx:key="id">
+        <view class="th" wx:if='{{index>0}}'>
+        第{{index+1}}条数据
+        </view>        
+        <view class="tr" >
+            <view class="td  td-1">合计</view>
+            <view class="td">{{ fee.total_fee }}</view>
+            <view class="td">{{ fee.total_fee_range }}</view>
+        </view>
+        <view class="tr"  wx:if="{{fee.prop_fee > 0 }}">
+            <view class="td td-1">住宅</view>
+            <view class="td">{{fee.prop_fee}}</view>
+            <view class="td">{{fee.prop_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.water_fee > 0 }}">
+            <view class="td td-1">水费</view>
+            <view class="td">{{fee.water_fee}}</view>
+            <view class="td">{{fee.water_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.sewage_fee > 0 }}">
+            <view class="td td-1">排污</view>
+            <view class="td">{{fee.sewage_fee}}</view>
+            <view class="td">{{fee.sewage_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.garbage_fee > 0 }}">
+            <view class="td td-1">垃圾</view>
+            <view class="td">{{fee.garbage_fee}}</view>
+            <view class="td">{{fee.garbage_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.base_fee > 0 }}">
+            <view class="td td-1">本体</view>
+            <view class="td">{{fee.base_fee}}</view>
+            <view class="td">{{fee.base_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.busi_fee > 0 }}">
+            <view class="td td-1">商业</view>
+            <view class="td">{{fee.busi_fee}}</view>
+            <view class="td">{{fee.busi_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{fee.busi_fee > 0 }}">
+            <view class="td td-1">电费</view>
+            <view class="td">{{fee.power_fee}}</view>
+            <view class="td">{{fee.power_fee_range}}</view>
+        </view>
+        <view class="tr" wx:if="{{ fee.note }}">
+            <view class="td" >{{fee.note}}</view>
+        </view>
+        </block>
+    </view>
+    <view class='searchTip'>请使用另外的手机扫码缴费</view>
+    <view>
+        <image src="../../images/feeqrcode.png" mode='aspectFit' show-menu-by-longpress='true'> 
+        </image>
+    </view>
+</view>

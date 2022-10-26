@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="image-parent">
+  <image src="../../images/banner.jpg" mode='aspectFill'> 
+  </image>
+  <view class='text-logo'>学府花园 我的家园</view>
+  </view>  
+  <view class="content">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <!-- <view>
+        <ocr-navigator bind:onSuccess="platenumSuccess" certificateType="platenum">
+        <button type="primary" disabled>车牌识别(未实现)</button>
+        </ocr-navigator>
+      </view> -->
+      <view class='searchItem'>
+            <image src='../../images/plate.png'></image>
+            <view>车牌号</view>
+            <input name="car_id"></input>
+        </view>
+        <view class='searchTip'>请输入车牌号后5位</view>
+        <button type="primary" class='one-button' formType="submit">查询</button>
+    </form>
+    <view class="text-box">
+        <text>{{message}}</text>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,117 @@
+/**app.wxss**/
+.container {
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.content{
+  margin-top: 20rpx;
+}
+
+view.searchItem {
+  display: flex;
+  height: 90rpx;
+  width: 100%;
+  background: #dbf7dd;
+  flex-direction: row;
+  border-radius: 50rpx;
+  margin-top: 20rpx;
+  align-items: center;
+}
+
+.th {
+  background-color: #00a06e;
+}
+
+.odd {
+  background-color: #e9f5eb;
+}
+view.searchTip {
+  margin-left: 20rpx;
+  margin-top: 14rpx;
+  font-size: 24rpx;
+}
+
+view.searchItem image {
+  height: 50rpx;
+  width: 50rpx;
+  align-self: center;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+view.searchItem input {
+  font-size: 38rpx;
+}
+
+button::after{ 
+	border: none; 
+}
+.one-button {
+  height:90rpx;
+  line-height: 90rpx;
+  margin-top: 20rpx;
+  border-radius: 50rpx;
+  } 
+
+input {
+  padding-left: 10rpx;
+    } 
+
+.text-box {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  }
+
+.image-parent image {
+    width: 100%; 
+  }
+  
+.image-parent {
+  position: relative;
+  width:100%
+}
+.text-logo {
+  width: 600rpx;
+  height: 100rpx;  
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size:larger;
+  font-weight:500;
+}
+
+.table {
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+  }
+  .tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
+  .th,.td {
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%
+  }
+  .th {
+  font-weight: 400;
+  background-color:aqua
+  }
+   
+  

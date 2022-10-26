@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="image-parent">
+  <image src="../../images/banner.jpg" mode='aspectFill'> 
+  </image>
+  <view class='text-logo'>学府花园 我的家园</view>
+  </view>
+    <view class="content">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class='searchItem'>
+            <image src='../../images/room.png'></image>
+            <view>房号</view>
+            <input name="room_id" value='{{owner.room_id}}'></input>
+        </view>
+        <view class='searchTip'>请输入4/5位房间号</view>
+        <view class='searchItem'>
+            <image src='../../images/owner.png'></image>
+            <view>姓名</view>
+            <input name="owner_name" value='{{owner.owner_name}}'></input>
+        </view>
+        <view class='searchTip'>请输入业主姓名</view>
+        <view class='searchItem'>
+            <image src='../../images/contact.png'></image>
+            <view>电话</view>
+            <input name="contact" value='{{owner.contact}}'></input>
+        </view>
+        <view class='searchTip'>请输入电话号码</view>
+        <button type="primary" class='one-button' formType="submit">提交</button>
+      </form>
+    </view>
+    <view class="text-box">
+      <text>{{message}}</text>
+    </view>
+  </view>
