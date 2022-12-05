@@ -3,7 +3,7 @@
   padding-top: 20rpx;
   background-color: transparent;   /*按钮透明*/  
   border:none;				/*设置按钮边框*/
-  width: 300rpx;
+  width: 600rpx;
   height: 300rpx;
   background-color: #e5e9e3;
 }
@@ -19,6 +19,6 @@ button image{
 }
 
 .text-under-image{
-    margin-top: -20rpx;
-    line-height: 40rpx;
+    margin-top: -10rpx;
+    line-height: 25rpx;
 }  

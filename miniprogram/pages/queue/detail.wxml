@@ -6,18 +6,14 @@
   </view>
     <view class="table">
         <view class="tr">
-            <view class="td" >车号</view>
-            <view class="td" id='{{car.car}}' 
+            <view class="td" >车牌</view>
+            <view class="td link" id='{{car.car}}' 
                 bindtap='navToCar'>{{car.car}}
             </view>
         </view>
         <view class="tr odd" >
-            <view class="td">申请号</view>
+            <view class="td">队列</view>
             <view class="td">{{ car.apply_id }}</view>
-        </view>
-        <view class="tr" >
-            <view class="td">排序</view>
-            <view class="td">{{ car.order }}</view>
         </view>
         <view class="tr odd" >
             <view class="td">申请时间</view>
@@ -29,7 +25,7 @@
         </view>
         <view class="tr odd" >
             <view class="td">办理时间</view>
-            <view class="td">{{ car.process_date }}</view>
+            <view class="td">{{ car.complete_date }}</view>
         </view>
         <view class="tr" >
             <view class="td">备注</view>

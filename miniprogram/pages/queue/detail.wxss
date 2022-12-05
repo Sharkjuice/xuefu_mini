@@ -1,14 +1,10 @@
-page {
-  font-size: 14px;
-  color: #333
-  }
-  .table {
+ .table {
   border:1px solid #dadada;
   border-right: 0;
   border-bottom: 0;
   width: 98%;
   }
-  .tr {
+ .tr {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -34,3 +30,7 @@ page {
     width:20% !important
     }
     
+    .link {
+        color: cornflowerblue;
+        text-decoration:underline;
+      }

@@ -34,7 +34,7 @@ Page({
             }
         })
         let car = res.data
-        wx.navigateTo({
+        await app.wxp.navigateTo({
             url: '/pages/queue/car_detail?car=' + JSON.stringify(car)
         })
     }

@@ -1,1 +1,6 @@
 /* pages/queue/history_list.wxss */
+
+.link {
+    color: cornflowerblue;
+    text-decoration:underline;
+  }

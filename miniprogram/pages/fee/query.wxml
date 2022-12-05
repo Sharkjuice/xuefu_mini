@@ -20,10 +20,6 @@
         <view class='searchTip'>请输入电话号码后4位</view>
         <button type="primary"  class='one-button' formType="submit">查询</button>
     </form>
-    <view class="text-box" style="color:darkgreen">
-      <text>完善我的信息,</text>
-      <text>更好地保护隐私</text>
-    </view>
     <view class="text-box" style="color:blueviolet">
       <text>{{message}}</text>
     </view>

@@ -3,7 +3,6 @@
     "pages/fee/query",
     "pages/fee/detail",
     "pages/queue/queue",
-    "pages/queue/list",
     "pages/queue/history_list",
     "pages/queue/detail",
     "pages/queue/car_detail",
@@ -41,7 +40,7 @@
       
       {  
       "pagePath": "pages/queue/queue",  
-      "text": "车辆排队",
+      "text": "地库轮候",
       "iconPath": "images/停车-01.png",
       "selectedIconPath": "images/停车-00.png"
     }, 

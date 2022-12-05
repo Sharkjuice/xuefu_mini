@@ -10,7 +10,7 @@
             <view class="td" >{{car.room_id}}</view>
         </view>
         <view class="tr odd">
-            <view class="td" >车号</view>
+            <view class="td" >车牌</view>
             <view class="td" >{{car.car_id}}</view>
         </view>
         <view class="tr">

@@ -6,59 +6,27 @@
     </view>
     <view class='content'>
         <form catchsubmit="formSubmit">
-            <view style="height:100%;display:flex;flex-direction: column;justify-content: space-between">
-                <view style="width:100%;display:flex;flex-direction: row;justify-content: space-around">
-                    <button class='four-button' id='ground_btn' formType="submit" style='border-top-left-radius:50rpx'>
-                        <image src="../../images/ground_01.png">
-                        </image>
-                        <view class='text-under-image'>
-                            <text>当前地面排队</text>
-                        </view>
-                    </button>
-                    <button class='four-button' id='ground_end_btn' formType="submit" style='border-top-right-radius:50rpx'>
-                        <image src="../../images/ground_00.png" mode='aspectFit'>
-                        </image>
-                        <view class='text-under-image'>
-                            <text>地面排队历史</text>
-                        </view>
-                    </button>
+            <button class='four-button' id='unground_end_btn' formType="submit">
+                <image src="../../images/unground_00.png">
+                </image>
+                <view  class='text-under-image'>
+                    <text>地库月卡轮候库</text>
                 </view>
-                <view style="width:100%;display:flex;flex-direction: row;justify-content: space-around">
-                    <button class='four-button' id='unground_btn' formType="submit">
-                        <image src="../../images/unground_01.png">
-                        </image>
-                        <view  class='text-under-image'>
-                            <text>当前地库排队[第1辆车]</text>
-                        </view>
-                    </button>
-                    <button class='four-button' id='unground_end_btn' formType="submit">
-                        <image src="../../images/unground_00.png">
-                        </image>
-                        <view  class='text-under-image'>
-                            <text>地库排队历史[第1辆车]</text>
-                        </view>
-                    </button>
+                <view>
+                    <text>(业主第一辆车)</text>
                 </view>
-            </view>
-            <view style="width:100%;display:flex;flex-direction: row;justify-content: space-around">
-                <button class='four-button' id='unground_btn_2' formType="submit" style='border-bottom-left-radius:50rpx'>
-                    <image src="../../images/unground_01.png">
-                    </image>
-                    <view  class='text-under-image'>
-                        <text>当前地库排队[第2辆车]</text>
-                    </view>
-                </button>
-                <button class='four-button' id='unground_end_btn_2' formType="submit" style='border-bottom-right-radius:50rpx'>
-                    <image src="../../images/unground_00.png">
-                    </image>
-                    <view  class='text-under-image'>
-                        <text>地库排队历史[第2辆车]</text>
-                    </view>
-                </button>
-            </view>
+            </button>
+            <button class='four-button' id='unground_end_btn_2' formType="submit">
+                <image src="../../images/unground_00.png">
+                </image>
+                <view  class='text-under-image'>
+                    <text>地库月卡轮候库</text>
+                </view>
+                <view>
+                    <text>(业主第二辆车或租客车)</text>
+                </view>
+
+            </button>
         </form>
-    </view>
-    <view class="text-box" style="color:tomato">
-        <text>{{message}}</text>
     </view>
 </view>

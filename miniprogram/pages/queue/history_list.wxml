@@ -1,23 +1,26 @@
 <view class="container">
+<view>
+<text>{{title}}</text>
+</view>
     <view class="table">
         <view class="tr">
-            <view class="th">申请号</view>
+            <view class="th" style='width:50%'>队列</view>
             <view class="th">车牌</view>
             <view class="th">状态</view>
             <view class="th">处理时间</view>
         </view>
         <view class="tr" wx:for="{{ cars }}" wx:for-item="car" wx:for-index="index" wx:key="apply_id">
         <block wx:if='{{index%2==0}}'>
-            <view class="td">{{car.apply_id}}</view>
-            <view class="td" id='{{car.id}}' bindtap="navDetail">
+            <view class="td" style='width:50%'>{{car.apply_id}}</view>
+            <view class="td link" id='{{car.id}}' bindtap="navDetail">
                 {{car.car}}
             </view>
             <view class="td">{{car.status}}</view>
             <view class="td">{{car.complete_date}}</view>    
         </block>
         <block wx:else>
-            <view class="td odd">{{car.apply_id}}</view>
-            <view class="td odd" id='{{car.id}}' bindtap="navDetail">
+            <view class="td odd" style='width:50%'>{{car.apply_id}}</view>
+            <view class="td odd link" id='{{car.id}}' bindtap="navDetail">
                 {{car.car}}</view>
             <view class="td odd">{{car.status}}</view>
             <view class="td odd">{{car.complete_date}}</view>    

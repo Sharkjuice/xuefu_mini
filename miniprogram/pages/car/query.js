@@ -22,8 +22,7 @@ Page({
         })
         if (res.data && res.data.length > 0){
             this.setData({message:""})
-            console.log(res.data)
-            wx.navigateTo({            
+            await app.wxp.navigateTo({
                 url: '/pages/car/car_detail?car=' + JSON.stringify(res.data[0])
             })
         }else{

@@ -47,21 +47,21 @@ export default {
 
     showLoading: wxPromise(wx.showLoading),
 
-    showModal: wxPromise(wx.showModal),
+    // showModal: wxPromise(wx.showModal),
 
-    showActionSheet: wxPromise(wx.showActionSheet),
+    // showActionSheet: wxPromise(wx.showActionSheet),
 
     // 导航条
 
-    setNavigationBarTitle: wxPromise(wx.setNavigationBarTitle),
+    // setNavigationBarTitle: wxPromise(wx.setNavigationBarTitle),
 
-    setNavigationBarColor: wxPromise(wx.setNavigationBarColor),
+    // setNavigationBarColor: wxPromise(wx.setNavigationBarColor),
 
-    setTopBarText: wxPromise(wx.setTopBarText),
+    // setTopBarText: wxPromise(wx.setTopBarText),
 
     // 导航
 
-    //navigateTo: wxPromise(wx.navigateTo),
+    navigateTo: wxPromise(wx.navigateTo),
 
     //redirectTo: wxPromise(wx.redirectTo),
 
@@ -75,83 +75,83 @@ export default {
 
     login: wxPromise(wx.login),
 
-    checkSession: wxPromise(wx.checkSession),
+    //checkSession: wxPromise(wx.checkSession),
 
-    authorize: wxPromise(wx.authorize),
+    //authorize: wxPromise(wx.authorize),
 
-    getUserInfo: wxPromise(wx.getUserInfo),
+    //getUserInfo: wxPromise(wx.getUserInfo),
 
  
 
     // 支付
 
-    requestPayment: wxPromise(wx.requestPayment),
+    // requestPayment: wxPromise(wx.requestPayment),
 
  
 
     // 图片
 
-    chooseImage: wxPromise(wx.chooseImage),
+    // chooseImage: wxPromise(wx.chooseImage),
 
-    previewImage: wxPromise(wx.previewImage),
+    // previewImage: wxPromise(wx.previewImage),
 
-    getImageInfo: wxPromise(wx.getImageInfo),
+    // getImageInfo: wxPromise(wx.getImageInfo),
 
-    saveImageToPhotosAlbum: wxPromise(wx.saveImageToPhotosAlbum),
+    // saveImageToPhotosAlbum: wxPromise(wx.saveImageToPhotosAlbum),
 
  
 
     // 文件
 
-    uploadFile: wxPromise(wx.uploadFile),
+    // uploadFile: wxPromise(wx.uploadFile),
 
-    downloadFile: wxPromise(wx.downloadFile),
+    // downloadFile: wxPromise(wx.downloadFile),
 
  
 
     // 录音
 
-    startRecord: wxPromise(wx.startRecord),
+    // startRecord: wxPromise(wx.startRecord),
 
  
 
     // 音频播放
 
-    playVoice: wxPromise(wx.playVoice),
+    // playVoice: wxPromise(wx.playVoice),
 
  
 
     // 音乐播放
 
-    getBackgroundAudioPlayerState: wxPromise(wx.getBackgroundAudioPlayerState),
+    // getBackgroundAudioPlayerState: wxPromise(wx.getBackgroundAudioPlayerState),
 
-    playBackgroundAudio: wxPromise(wx.playBackgroundAudio),
+    // playBackgroundAudio: wxPromise(wx.playBackgroundAudio),
 
-    seekBackgroundAudio: wxPromise(wx.seekBackgroundAudio),
+    // seekBackgroundAudio: wxPromise(wx.seekBackgroundAudio),
 
  
 
     // 视频
 
-    chooseVideo: wxPromise(wx.chooseVideo),
+    // chooseVideo: wxPromise(wx.chooseVideo),
 
-    saveVideoToPhotosAlbum: wxPromise(wx.saveVideoToPhotosAlbum),
+    // saveVideoToPhotosAlbum: wxPromise(wx.saveVideoToPhotosAlbum),
 
  
 
     // 文件
 
-    saveFile: wxPromise(wx.saveFile),
+    // saveFile: wxPromise(wx.saveFile),
 
-    getFileInfo: wxPromise(wx.getFileInfo),
+    // getFileInfo: wxPromise(wx.getFileInfo),
 
-    getSavedFileList: wxPromise(wx.getSavedFileList),
+    // getSavedFileList: wxPromise(wx.getSavedFileList),
 
-    getSavedFileInfo: wxPromise(wx.getSavedFileInfo),
+    // getSavedFileInfo: wxPromise(wx.getSavedFileInfo),
 
-    removeSavedFile: wxPromise(wx.removeSavedFile),
+    // removeSavedFile: wxPromise(wx.removeSavedFile),
 
-    openDocument: wxPromise(wx.openDocument),
+    // openDocument: wxPromise(wx.openDocument),
 
  
 
@@ -163,188 +163,188 @@ export default {
 
     getStorageInfo: wxPromise(wx.getStorageInfo),
 
-    removeStorage: wxPromise(wx.removeStorage),
+    //removeStorage: wxPromise(wx.removeStorage),
 
  
 
     // 位置
 
-    getLocation: wxPromise(wx.getLocation),
+    // getLocation: wxPromise(wx.getLocation),
 
-    chooseLocation: wxPromise(wx.chooseLocation),
+    // chooseLocation: wxPromise(wx.chooseLocation),
 
-    openLocation: wxPromise(wx.openLocation),
+    // openLocation: wxPromise(wx.openLocation),
 
  
 
     // 设备
 
-    getSystemInfo: wxPromise(wx.getSystemInfo),
+    // getSystemInfo: wxPromise(wx.getSystemInfo),
 
-    getNetworkType: wxPromise(wx.getNetworkType),
+    // getNetworkType: wxPromise(wx.getNetworkType),
 
-    startAccelerometer: wxPromise(wx.startAccelerometer),
+    // startAccelerometer: wxPromise(wx.startAccelerometer),
 
-    stopAccelerometer: wxPromise(wx.stopAccelerometer),
+    // stopAccelerometer: wxPromise(wx.stopAccelerometer),
 
-    startCompass: wxPromise(wx.startCompass),
+    // startCompass: wxPromise(wx.startCompass),
 
-    stopCompass: wxPromise(wx.stopCompass),
+    // stopCompass: wxPromise(wx.stopCompass),
 
     // 打电话
 
-    makePhoneCall: wxPromise(wx.makePhoneCall),
+    // makePhoneCall: wxPromise(wx.makePhoneCall),
 
     // 扫码
 
-    scanCode: wxPromise(wx.scanCode),
+    // scanCode: wxPromise(wx.scanCode),
 
     // 剪切板
 
-    setClipboardData: wxPromise(wx.setClipboardData),
+    // setClipboardData: wxPromise(wx.setClipboardData),
 
-    getClipboardData: wxPromise(wx.getClipboardData),
+    // getClipboardData: wxPromise(wx.getClipboardData),
 
     // 蓝牙
 
-    openBluetoothAdapter: wxPromise(wx.openBluetoothAdapter),
+    // openBluetoothAdapter: wxPromise(wx.openBluetoothAdapter),
 
-    closeBluetoothAdapter: wxPromise(wx.closeBluetoothAdapter),
+    // closeBluetoothAdapter: wxPromise(wx.closeBluetoothAdapter),
 
-    getBluetoothAdapterState: wxPromise(wx.getBluetoothAdapterState),
+    // getBluetoothAdapterState: wxPromise(wx.getBluetoothAdapterState),
 
-    startBluetoothDevicesDiscovery: wxPromise(wx.startBluetoothDevicesDiscovery),
+    // startBluetoothDevicesDiscovery: wxPromise(wx.startBluetoothDevicesDiscovery),
 
-    stopBluetoothDevicesDiscovery: wxPromise(wx.stopBluetoothDevicesDiscovery),
+    // stopBluetoothDevicesDiscovery: wxPromise(wx.stopBluetoothDevicesDiscovery),
 
-    getBluetoothDevices: wxPromise(wx.getBluetoothDevices),
+    // getBluetoothDevices: wxPromise(wx.getBluetoothDevices),
 
-    getConnectedBluetoothDevices: wxPromise(wx.getConnectedBluetoothDevices),
+    // getConnectedBluetoothDevices: wxPromise(wx.getConnectedBluetoothDevices),
 
-    createBLEConnection: wxPromise(wx.createBLEConnection),
+    // createBLEConnection: wxPromise(wx.createBLEConnection),
 
-    closeBLEConnection: wxPromise(wx.closeBLEConnection),
+    // closeBLEConnection: wxPromise(wx.closeBLEConnection),
 
-    getBLEDeviceServices: wxPromise(wx.getBLEDeviceServices),
+    // getBLEDeviceServices: wxPromise(wx.getBLEDeviceServices),
 
     // iBeacon
 
-    startBeaconDiscovery: wxPromise(wx.startBeaconDiscovery),
+    // startBeaconDiscovery: wxPromise(wx.startBeaconDiscovery),
 
-    stopBeaconDiscovery: wxPromise(wx.stopBeaconDiscovery),
+    // stopBeaconDiscovery: wxPromise(wx.stopBeaconDiscovery),
 
-    getBeacons: wxPromise(wx.getBeacons),
+    // getBeacons: wxPromise(wx.getBeacons),
 
     // 屏幕亮度
 
-    setScreenBrightness: wxPromise(wx.setScreenBrightness),
+    // setScreenBrightness: wxPromise(wx.setScreenBrightness),
 
-    getScreenBrightness: wxPromise(wx.getScreenBrightness),
+    // getScreenBrightness: wxPromise(wx.getScreenBrightness),
 
-    setKeepScreenOn: wxPromise(wx.setKeepScreenOn),
+    // setKeepScreenOn: wxPromise(wx.setKeepScreenOn),
 
     // 振动
 
-    vibrateLong: wxPromise(wx.vibrateLong),
+    // vibrateLong: wxPromise(wx.vibrateLong),
 
-    vibrateShort: wxPromise(wx.vibrateShort),
+    // vibrateShort: wxPromise(wx.vibrateShort),
 
     // 联系人
 
-    addPhoneContact: wxPromise(wx.addPhoneContact),
+    // addPhoneContact: wxPromise(wx.addPhoneContact),
 
     // NFC
 
-    getHCEState: wxPromise(wx.getHCEState),
+    // getHCEState: wxPromise(wx.getHCEState),
 
-    startHCE: wxPromise(wx.startHCE),
+    // startHCE: wxPromise(wx.startHCE),
 
-    stopHCE: wxPromise(wx.stopHCE),
+    // stopHCE: wxPromise(wx.stopHCE),
 
-    sendHCEMessage: wxPromise(wx.sendHCEMessage),
+    // sendHCEMessage: wxPromise(wx.sendHCEMessage),
 
     // Wi-Fi
 
-    startWifi: wxPromise(wx.startWifi),
+    // startWifi: wxPromise(wx.startWifi),
 
-    stopWifi: wxPromise(wx.stopWifi),
+    // stopWifi: wxPromise(wx.stopWifi),
 
-    connectWifi: wxPromise(wx.connectWifi),
+    // connectWifi: wxPromise(wx.connectWifi),
 
-    getWifiList: wxPromise(wx.getWifiList),
+    // getWifiList: wxPromise(wx.getWifiList),
 
-    setWifiList: wxPromise(wx.setWifiList),
+    // setWifiList: wxPromise(wx.setWifiList),
 
-    getConnectedWifi: wxPromise(wx.getConnectedWifi),
+    // getConnectedWifi: wxPromise(wx.getConnectedWifi),
 
  
 
     // 第三方平台
 
-    getExtConfig: wxPromise(wx.getExtConfig),
+    // getExtConfig: wxPromise(wx.getExtConfig),
 
  
 
     // 转发
 
-    showShareMenu: wxPromise(wx.showShareMenu),
+    // showShareMenu: wxPromise(wx.showShareMenu),
 
-    hideShareMenu: wxPromise(wx.hideShareMenu),
+    // hideShareMenu: wxPromise(wx.hideShareMenu),
 
-    updateShareMenu: wxPromise(wx.updateShareMenu),
+    // updateShareMenu: wxPromise(wx.updateShareMenu),
 
-    getShareInfo: wxPromise(wx.getShareInfo),
+    // getShareInfo: wxPromise(wx.getShareInfo),
 
  
 
     // 收货地址
 
-    chooseAddress: wxPromise(wx.chooseAddress),
+    // chooseAddress: wxPromise(wx.chooseAddress),
 
  
 
     // 卡券
 
-    addCard: wxPromise(wx.addCard),
+    // addCard: wxPromise(wx.addCard),
 
-    openCard: wxPromise(wx.openCard),
+    // openCard: wxPromise(wx.openCard),
 
  
 
     // 设置
 
-    openSetting: wxPromise(wx.openSetting),
+    // openSetting: wxPromise(wx.openSetting),
 
-    getSetting: wxPromise(wx.getSetting),
+    // getSetting: wxPromise(wx.getSetting),
 
  
 
     // 微信运动
 
-    getWeRunData: wxPromise(wx.getWeRunData),
+    // getWeRunData: wxPromise(wx.getWeRunData),
 
  
 
     // 打开小程序
 
-    navigateToMiniProgram: wxPromise(wx.navigateToMiniProgram),
+    // navigateToMiniProgram: wxPromise(wx.navigateToMiniProgram),
 
-    navigateBackMiniProgram: wxPromise(wx.navigateBackMiniProgram),
+    // navigateBackMiniProgram: wxPromise(wx.navigateBackMiniProgram),
 
  
 
     // 获取发票抬头
 
-    chooseInvoiceTitle: wxPromise(wx.chooseInvoiceTitle),
+    // chooseInvoiceTitle: wxPromise(wx.chooseInvoiceTitle),
 
  
 
     // 生物认证
 
-    checkIsSupportSoterAuthentication: wxPromise(wx.checkIsSupportSoterAuthentication),
+    // checkIsSupportSoterAuthentication: wxPromise(wx.checkIsSupportSoterAuthentication),
 
-    startSoterAuthentication: wxPromise(wx.startSoterAuthentication),
+    // startSoterAuthentication: wxPromise(wx.startSoterAuthentication),
 
-    checkIsSoterEnrolledInDevice: wxPromise(wx.checkIsSoterEnrolledInDevice)
+    // checkIsSoterEnrolledInDevice: wxPromise(wx.checkIsSoterEnrolledInDevice)
 
 }

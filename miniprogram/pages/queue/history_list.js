@@ -1,6 +1,8 @@
+let app = getApp(); //这句是引入
 Page({
     data:{
-        cars: []
+        cars: [],
+        title: ''
       },
       onLoad: function(options) {
         if(options){
@@ -12,10 +14,11 @@ Page({
                 car.complete_date = '--'
               }
           })
-          this.setData({cars}) 
+          var title = options.title
+          this.setData({cars,title}) 
         }  
       },
-      navDetail(e){
+      async navDetail(e){
         let my_car = {}
         let id = e.currentTarget.id
         this.data.cars.forEach( (car, index) => {
@@ -25,7 +28,7 @@ Page({
           }
         })
         //console.log(my_car)
-        wx.navigateTo({
+        await app.wxp.navigateTo({
           url: '/pages/queue/detail?car=' + JSON.stringify(my_car)
         })
       },

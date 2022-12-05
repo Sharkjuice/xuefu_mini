@@ -32,7 +32,7 @@ Page({
         }
         if (res.data && res.data.length > 0){
             //console.log("query", res.data[0])
-            wx.navigateTo({            
+            await app.wxp.navigateTo({            
                 url: '/pages/fee/detail?fee_list=' + JSON.stringify(res.data)
             })
         }else{
